@@ -1,0 +1,26 @@
+{
+  "name": "rnb.css",
+  "version": "0.5.6",
+  "description": "RBN - [reset browser normalize]. Unify all browser base styles",
+  "main": "rnb.css",
+  "devDependencies": {
+    "stylelint": "^7.9.0",
+    "stylelint-config-standard": "^16.0.0"
+  },
+  "scripts": {
+    "test": "stylelint rnb.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crlang/reset-browser-normalize.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "darlang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crlang/reset-browser-normalize/issues"
+  },
+  "homepage": "https://github.com/crlang/reset-browser-normalize#readme"
+}
