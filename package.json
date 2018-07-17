@@ -1,14 +1,14 @@
 {
-  "name": "rnb.css",
-  "version": "0.5.6",
+  "name": "rbn.css",
+  "version": "0.5.8",
   "description": "RBN - [reset browser normalize]. Unify all browser base styles",
-  "main": "rnb.css",
+  "main": "rbn.css",
   "devDependencies": {
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0"
   },
   "scripts": {
-    "test": "stylelint rnb.css"
+    "test": "stylelint rbn.css"
   },
   "repository": {
     "type": "git",
