@@ -3,7 +3,7 @@
  * @name reset browser normalize
  * @authors darlang (http://darlang.com)
  * @date    2018-07-09 10:54:03
- * @version 0.5.8
+ * @version 0.6.3
  * @license MIT
  */
 
@@ -95,6 +95,7 @@ a, a:visited {
 
 a:hover, a:active, a:focus {
   color: inherit;
+  opacity: 0.85;
 }
 
 blockquote, q {
@@ -198,7 +199,7 @@ button, input[type="button"], input[type="submit"], input[type="reset"] {
 }
 
 button:active, input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active {
-  opacity: 0.98;
+  opacity: 0.85;
 }
 
 input[disabled],input:disabled, button[disabled],button:disabled, select[disabled],select:disabled, textarea[disable],textarea:disabled {
