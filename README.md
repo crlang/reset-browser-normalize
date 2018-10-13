@@ -13,8 +13,10 @@ npm install --save rbn.css
 
 **Download**
 ```sh
-git clone https://github.com/crlang/reset-browser-normalize/archive/master.zip
+git clone https://github.com/crlang/reset-browser-normalize.git
 ```
+
+[Click Me](https://github.com/crlang/reset-browser-normalize/archive/master.zip) Download.
 
 **LICENSE**
 [MIT](./LICENSE)

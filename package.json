@@ -1,6 +1,6 @@
 {
   "name": "rbn.css",
-  "version": "0.6.3",
+  "version": "0.7.2",
   "description": "RBN - [reset browser normalize]. Unify all browser base styles",
   "main": "rbn.css",
   "devDependencies": {
