@@ -1,26 +1,54 @@
 {
-  "name": "rbn.css",
-  "version": "0.7.2",
+  "_from": "rbn.css",
+  "_id": "rbn.css@0.8.9",
+  "_inBundle": false,
+  "_integrity": "sha512-wumVa+mpBdEztUvb4aoL841vHTPUduh6cgXeVxQ1Ftn4bjOebeP6CMDJeHYlvqdSQ+p85eYNnrWXTvbSvvVOog==",
+  "_location": "/rbn.css",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "rbn.css",
+    "name": "rbn.css",
+    "escapedName": "rbn.css",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/rbn.css/-/rbn.css-0.7.2.tgz",
+  "_shasum": "2bf48ba6cd79ddee4d7a0bb8ebc7489b45dc934a",
+  "_spec": "rbn.css",
+  "_where": "D:\\Localhost\\tests",
+  "author": {
+    "name": "darlang"
+  },
+  "bugs": {
+    "url": "https://github.com/crlang/reset-browser-normalize/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "RBN - [reset browser normalize]. Unify all browser base styles",
-  "main": "rbn.css",
   "devDependencies": {
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0"
   },
-  "scripts": {
-    "test": "stylelint rbn.css"
-  },
+  "homepage": "https://github.com/crlang/reset-browser-normalize#readme",
+  "keywords": [
+    "css"
+  ],
+  "license": "MIT",
+  "main": "rbn.css",
+  "name": "rbn.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/crlang/reset-browser-normalize.git"
   },
-  "keywords": [
-    "css"
-  ],
-  "author": "darlang",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/crlang/reset-browser-normalize/issues"
+  "scripts": {
+    "test": "stylelint rbn.css"
   },
-  "homepage": "https://github.com/crlang/reset-browser-normalize#readme"
+  "version": "0.8.9"
 }
