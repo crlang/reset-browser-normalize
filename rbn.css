@@ -3,8 +3,8 @@
 /* !*
  * @name reset browser normalize
  * @authors darlang (http://darlang.com)
- * @date    2018-07-09 10:54:03
- * @version 0.7.2
+ * @date    2020-4-10 16:44:28;
+ * @version 0.9.5
  * @license MIT
  */
 
@@ -15,51 +15,7 @@
  * --------------------------------------------------------------------------
  */
 
-/* scrollbar */::-webkit-scrollbar-track-piece {
-  width: 12px;
-  border-right: 1px solid #eee;
-  border-left: 1px solid #e4e4e4;
-  background-color: #f0f0f0;
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #fff);
-}
-
-::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-  position: relative;
-  min-height: 25px;
-  border-radius: 9999px;
-  background-color: #ccc;
-  background-clip: padding-box;
-}
-
-::-webkit-scrollbar-thumb:vertical {
-  border-top: 0 solid transparent;
-  border-right: 2px solid transparent;
-  border-bottom: 0 solid transparent;
-  border-left: 3px solid transparent;
-}
-
-::-webkit-scrollbar-thumb:horizontal {
-  border-top: 3px solid transparent;
-  border-right: 0 solid transparent;
-  border-bottom: 2px solid transparent;
-  border-left: 0 solid transparent;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background-color: #777;
-}
-
 /* reset normal */
-html {
-  color: #333;
-  -webkit-text-size-adjust: 100%;
-}
-
 a, abbr, acronym, address, applet, area, article, aside, audio, b, base, basefont, bdi, bdo, big, blockquote, body, br, button, canvas, caption, center, cite, code, col, colgroup, command, datalist, dd, del, details, dfn, dialog, dir, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, frame, frameset, h1, h2, h3, h4, h5, h6, head, header, hr, html, i, iframe, img, input, ins, kbd, keygen, label, legend, li, link, main, map, mark, menu, meta, meter, nav, noframes, noscript, object, ol, optgroup, option, output, p, param, pre, progress, q, rp, rt, ruby, s, samp, script, section, select, small, source, span, strike, strong, style, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, title, tr, track, tt, u, ul, var, video, wbr {
   margin: 0;
   padding: 0;
@@ -69,6 +25,11 @@ a, abbr, acronym, address, applet, area, article, aside, audio, b, base, basefon
   font: inherit;
   word-break: break-all;
   word-wrap: break-word;
+}
+
+html {
+  color: #333;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -131,7 +92,7 @@ h6 {
 
 img {
   border: none;
-  max-width: 100%;/* Some maps are affected by this. e.g. baidu/google map */
+  max-width: 100%;/* This property will affect the map component */
   height: auto;
 }
 
@@ -252,6 +213,51 @@ th, td {
 
 th {
   font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+ *
+ * scrollbar begin
+ *
+ * --------------------------------------------------------------------------
+ */
+::-webkit-scrollbar-track-piece {
+  width: 12px;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #e4e4e4;
+  background-color: #f0f0f0;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #fff);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  position: relative;
+  min-height: 25px;
+  border-radius: 9999px;
+  background-color: #ccc;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  border-top: 0 solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 3px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  border-top: 3px solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 2px solid transparent;
+  border-left: 0 solid transparent;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #777;
 }
 
 /* --------------------------------------------------------------------------
