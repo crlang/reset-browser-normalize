@@ -4,7 +4,7 @@
  * @name reset browser normalize
  * @authors darlang (http://darlang.com)
  * @date    2020-4-10 16:44:28;
- * @version 0.9.5
+ * @version 0.9.5n
  * @license MIT
  */
 
@@ -34,7 +34,7 @@ html {
 
 body {
   color: initial;
-  font: normal 16px/1.5 "Source Han Sans CN DemiLight", "Noto Sans CJK DemiLight", "Noto Sans S Chinese DemiLight", "Source Han Sans DemiLight", "Microsoft YaHei", sans-serif;
+  font: normal 16px/1.5 -apple-system, BlinkMacSystemFont, 'PingFang SC', "Microsoft YaHei", "Source Han Sans CN DemiLight", "Noto Sans CJK DemiLight", "Noto Sans S Chinese DemiLight", "Source Han Sans DemiLight", sans-serif;
   overflow-x: hidden;
 }
 
@@ -94,21 +94,6 @@ img {
   border: none;
   max-width: 100%;/* This property will affect the map component */
   height: auto;
-}
-
-input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="url"] {
-  width: auto;
-  height: auto;
-  padding: 0;
-  font-size: 14px;
-  color: #555;
-  background: none;
-  border: 1px solid #eee;
-  border-radius: 0;
-}
-
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus {
-  border-color: #dedede;
 }
 
 :-moz-placeholder, input:-moz-placeholder {
