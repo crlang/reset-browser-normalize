@@ -1,0 +1,27 @@
+{
+  "name": "rbn.css",
+  "version": "1.0.0",
+  "author": {
+    "name": "crlang"
+  },
+  "bugs": {
+    "url": "https://github.com/crlang/reset-browser-normalize/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "RBN - [reset browser normalize]. Unify all browser base styles",
+  "devDependencies": {
+  },
+  "homepage": "https://github.com/crlang/reset-browser-normalize#readme",
+  "keywords": [
+    "css"
+  ],
+  "license": "MIT",
+  "main": "rbn.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crlang/reset-browser-normalize.git"
+  },
+  "scripts": {
+  }
+}
