@@ -1,6 +1,6 @@
 {
   "name": "rbn.css",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "author": {
     "name": "crlang"
   },
@@ -10,8 +10,7 @@
   "bundleDependencies": false,
   "deprecated": false,
   "description": "RBN - [reset browser normalize]. Unify all browser base styles",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "homepage": "https://github.com/crlang/reset-browser-normalize#readme",
   "keywords": [
     "css"
@@ -22,6 +21,5 @@
     "type": "git",
     "url": "git+https://github.com/crlang/reset-browser-normalize.git"
   },
-  "scripts": {
-  }
+  "scripts": {}
 }

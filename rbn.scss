@@ -1,0 +1,484 @@
+@charset "UTF-8";
+
+/**
+ * @name reset browser normalize
+ * @description: A new version of the browser reset solution, a lower cost, a more elegant way
+ * @authors darlang (http://darlang.com)
+ * @date    2022-7-19 13:11:04
+ * @version 2.0.0
+ * @license MIT
+ */
+
+/* --------------------------------------------------------------------------
+ *
+ * reset
+ *
+ * --------------------------------------------------------------------------
+ */
+// a
+a,
+abbr,
+address,
+area,
+article,
+aside,
+audio,
+// b
+b,
+base,
+bdi,
+bdo,
+blockquote,
+body,
+br,
+button,
+// c
+canvas,
+caption,
+cite,
+code,
+col,
+colgroup,
+// d
+data,
+datalist,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+// e
+em,
+embed,
+// f
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+// h
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+head,
+header,
+hr,
+html,
+// i
+i,
+iframe,
+img,
+input,
+ins,
+// k
+kbd,
+keygen,
+// l
+label,
+legend,
+li,
+link,
+// m
+main,
+map,
+mark,
+menu,
+meta,
+meter,
+// n
+nav,
+noscript,
+// o
+object,
+ol,
+optgroup,
+option,
+output,
+// p
+p,
+param,
+picture,
+pre,
+progress,
+// q
+q,
+// r
+rp,
+rt,
+rtc,
+ruby,
+// s
+s,
+samp,
+script,
+section,
+select,
+slot,
+small,
+source,
+span,
+strong,
+style,
+sub,
+summary,
+sup,
+// t
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+time,
+title,
+tr,
+track,
+// u
+u,
+ul,
+// v
+var,
+video,
+// w
+wbr {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  word-break: break-all;
+  word-wrap: break-word;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #333;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font: normal 16px/1.5 -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei',
+    'Source Han Sans CN DemiLight', 'Noto Sans CJK DemiLight', 'Noto Sans S Chinese DemiLight',
+    'Source Han Sans DemiLight', sans-serif;
+  color: initial;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  opacity: 1;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: inherit;
+    opacity: 0.85;
+  }
+}
+
+blockquote,
+q {
+  display: block;
+  quotes: none;
+  &::after,
+  &::before {
+    content: none;
+  }
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+img {
+  height: auto;
+  max-width: 100%; /* This property will affect the map component */
+  border: none;
+}
+
+input {
+  outline: none;
+  &::placeholder {
+    color: #999;
+    opacity: 1;
+  }
+
+  &[disable],
+  &:disabled {
+    opacity: 0.72;
+  }
+}
+
+button {
+  font-size: 14px;
+  line-height: 1.5;
+  color: inherit;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  &:active {
+    opacity: 0.85;
+  }
+
+  &[disabled],
+  &:disabled {
+    opacity: 0.72;
+  }
+}
+
+textarea {
+  height: auto;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+
+  &[disable],
+  &:disabled {
+    opacity: 0.72;
+    resize: none;
+  }
+}
+
+select {
+  outline: none;
+  &[disable],
+  &:disabled {
+    opacity: 0.72;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+small {
+  font-size: 85%;
+  font-weight: 300;
+}
+
+strong {
+  font-size: 101%;
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  vertical-align: middle;
+  border: 1px solid #eee;
+}
+
+th {
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+ *
+ * scrollbar
+ *
+ * --------------------------------------------------------------------------
+ */
+::-webkit-scrollbar-track-piece {
+  width: 0;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(90deg, #fff, #f0f0f0);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  position: relative;
+  min-height: 25px;
+  background-color: #ccc;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #a0a0a0;
+}
+
+/* --------------------------------------------------------------------------
+ *
+ * utils
+ *
+ * --------------------------------------------------------------------------
+ */
+.dp {
+  &-n {
+    display: none !important;
+  }
+
+  &-b {
+    display: block !important;
+  }
+
+  &-i {
+    display: inline;
+  }
+
+  &-ib {
+    display: inline-block;
+  }
+
+  &-f {
+    display: flex;
+  }
+
+  &-if {
+    display: inline-flex;
+  }
+}
+
+.text {
+  &-left {
+    text-align: left;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+}
+
+.fl {
+  &-l {
+    float: left;
+  }
+
+  &-r {
+    float: right;
+  }
+
+  &-n {
+    float: none;
+  }
+}
+
+.cl {
+  &-l {
+    clear: left;
+  }
+  &-r {
+    clear: right;
+  }
+
+  &-b {
+    clear: both;
+  }
+
+  &-n {
+    clear: none;
+  }
+}
+
+.clear,
+.clearfix {
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  font-size: 0;
+}
+
+.cl {
+  zoom: 1;
+  &::after {
+    display: block;
+    height: 0;
+    clear: both;
+    font-size: 0;
+    content: ' ';
+    visibility: hidden;
+  }
+}
+
+// padding margin
+// e.g. pt-10 ml-5
+// pt-1 = padding-top: 5px;
+// pt-2 = padding-top: 10px;
+$spacer: 5px !default;
+$spacers: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $spacers {
+    .#{$abbrev}-#{$size} {
+      #{$prop}: #{$size * $spacer} !important;
+    }
+
+    .#{$abbrev}t-#{$size},
+    .#{$abbrev}y-#{$size} {
+      #{$prop}-top: #{$size * $spacer} !important;
+    }
+
+    .#{$abbrev}r-#{$size},
+    .#{$abbrev}x-#{$size} {
+      #{$prop}-right: #{$size * $spacer} !important;
+    }
+
+    .#{$abbrev}b-#{$size},
+    .#{$abbrev}y-#{$size} {
+      #{$prop}-bottom: #{$size * $spacer} !important;
+    }
+
+    .#{$abbrev}l-#{$size},
+    .#{$abbrev}x-#{$size} {
+      #{$prop}-left: #{$size * $spacer} !important;
+    }
+  }
+}
+
+// color is from bootstrap v5
+.text-muted {
+  color: #6c757d;
+}
+.text-success {
+  color: #198754;
+}
+.text-warning {
+  color: #ffc107;
+}
+.text-danger {
+  color: #dc3545;
+}
