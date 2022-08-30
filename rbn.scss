@@ -4,8 +4,8 @@
  * @name reset browser normalize
  * @description: A new version of the browser reset solution, a lower cost, a more elegant way
  * @authors darlang (http://darlang.com)
- * @date    2022-7-19 13:11:04
- * @version 2.0.0
+ * @date    2022-8-30 10:30:57
+ * @version 2.0.2
  * @license MIT
  */
 
@@ -159,15 +159,15 @@ wbr {
 
 html {
   color: #333;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
+  overflow-x: hidden;
   font: normal 16px/1.5 -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei',
     'Source Han Sans CN DemiLight', 'Noto Sans CJK DemiLight', 'Noto Sans S Chinese DemiLight',
     'Source Han Sans DemiLight', sans-serif;
   color: initial;
-  overflow-x: hidden;
 }
 
 a {
@@ -188,6 +188,7 @@ blockquote,
 q {
   display: block;
   quotes: none;
+
   &::after,
   &::before {
     content: none;
@@ -226,6 +227,7 @@ img {
 
 input {
   outline: none;
+
   &::placeholder {
     color: #999;
     opacity: 1;
@@ -246,6 +248,7 @@ button {
   border: none;
   border-radius: 0;
   outline: none;
+
   &:active {
     opacity: 0.85;
   }
@@ -271,6 +274,7 @@ textarea {
 
 select {
   outline: none;
+
   &[disable],
   &:disabled {
     opacity: 0.72;
@@ -398,9 +402,21 @@ th {
 }
 
 .cl {
+  zoom: 1;
+
+  &::after {
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    content: ' ';
+    visibility: hidden;
+  }
+
   &-l {
     clear: left;
   }
+
   &-r {
     clear: right;
   }
@@ -416,22 +432,10 @@ th {
 
 .clear,
 .clearfix {
+  clear: both;
   height: 0;
   overflow: hidden;
-  clear: both;
   font-size: 0;
-}
-
-.cl {
-  zoom: 1;
-  &::after {
-    display: block;
-    height: 0;
-    clear: both;
-    font-size: 0;
-    content: ' ';
-    visibility: hidden;
-  }
 }
 
 // padding margin
@@ -473,12 +477,15 @@ $spacers: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
 .text-muted {
   color: #6c757d;
 }
+
 .text-success {
   color: #198754;
 }
+
 .text-warning {
   color: #ffc107;
 }
+
 .text-danger {
   color: #dc3545;
 }
